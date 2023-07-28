@@ -1,0 +1,57 @@
+body {
+    background-image: url("./Images/hills.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    min-height: 100%;
+    width: 100vw;
+    display: flex;
+}
+
+#img-sidebar {
+    margin-top: 200px;
+    height: 200px;
+    flex-basis: 100%;
+    background-color: black;
+    color: white;
+    opacity: 0.5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#img-sidebar span {
+    opacity: 1;
+    color: white;
+    font-size: 5em;
+    font-family: 'Edu SA Beginner', cursive;
+}
+
+#img-sidebar img {
+    height: 125px;
+}
+
+footer {
+    color: white;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+    background-color: black;
+    opacity: 0.5;
+}
+
+#left-side {
+    display: flex;
+    flex: 1;
+    height: 100%;
+    flex-wrap: wrap;
+    text-align: center;
+    align-content: space-between;
+    justify-content: center;
+}
+
+#right-side {
+    background-color: gainsboro;
+    flex: 2;
+    height: 100%;
+}
