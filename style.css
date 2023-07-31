@@ -130,9 +130,26 @@ button {
     border-radius: 5px;
     margin-bottom: 30px;
     font-size: 1rem;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.3);
+}
+
+.error:focus {
+    border: 0px;
+    outline: 1px solid red;
+    box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.5);
 }
 
 :focus {
-    outline:1px solid blue;
+    border: 0px;
+    outline: 1px solid blue;
     box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.5);
+}
+
+.error {
+    border: 1px solid red;
+}
+
+#error-text {
+    font-size: 0.8rem;
+    color: red;
 }

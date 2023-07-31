@@ -8,6 +8,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@700&display=swap" rel="stylesheet">
+        <script src="javascript.js" defer></script>
     </head>
     <body>
         <div id="left-side">
@@ -20,7 +21,7 @@
         <div id="right-side">
             <div>
                 <p class="form-intro">Hello friend!</p>
-                <p class="form-intro">This form serves absolutely no purpose other than to practice building and styling web pages. Filling this out will serve absolutely no purpose other than testing out your keyboard. Thanks for your understanding, but if you don't understand I don't know what to tell you!</p>
+                <p class="form-intro">This form serves absolutely no purpose other than to practice building and styling web pages. It is only useful for testing out your keyboard. Thanks for your understanding, but if you don't understand I don't know what to tell you!</p>
             </div>
             <div id="form-container">
                 <h2>Give no one your info!</h2>
@@ -28,21 +29,22 @@
                     <div class="form-col">
                         <div class="input-div">
                             <label for="first-name">FIRST NAME</label>
-                            <input type="text" id="first-name" name="first-name"/>
+                            <input type="text" id="first-name" name="first-name" placeholder="John"/>
                         </div>
                         <div class="input-div">
                             <label for="email">EMAIL</label>
-                            <input type="email" id="email" name="email"/>
+                            <input type="email" id="email" name="email" placeholder="example@website.com"/>
                         </div>
                         <div class="input-div">
                             <label for="password">PASSWORD</label>
-                            <input type="password" id="password" name="password" class="pass-nomatch"/>
+                            <input type="password" id="password" name="password" class="error"/>
                         </div>
+                        <p id="error-text"></p>
                     </div>
                     <div class="form-col">
                         <div class="input-div">
                             <label for="last-name">LAST NAME</label>
-                            <input type="text" id="last-name" name="last-name"/>
+                            <input type="text" id="last-name" name="last-name" placeholder="Smith"/>
                         </div>
                         <div class="input-div">
                             <label for="phone">PHONE NUMBER</label>
@@ -50,7 +52,7 @@
                         </div>
                         <div class="input-div">
                             <label for="password-confirm">CONFIRM PASSWORD</label>
-                            <input type="password" id="password-confirm" name="password-confirm" class="pass-nomatch"/>
+                            <input type="password" id="password-confirm" name="password-confirm" class="error"/>
                         </div>
                     </div>
                 <form>
