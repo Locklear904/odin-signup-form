@@ -19,28 +19,41 @@
         </div>
         <div id="right-side">
             <div>
-                <p>Hello friend! This form serves absolutely no purpose other than to practice building and styling web pages. Filling this out will serve absolutely no purpose other than testing out your keyboard. Thanks for your understanding, but if you don't understand I don't know what to tell you!</p>
+                <p class="form-intro">Hello friend!</p>
+                <p class="form-intro">This form serves absolutely no purpose other than to practice building and styling web pages. Filling this out will serve absolutely no purpose other than testing out your keyboard. Thanks for your understanding, but if you don't understand I don't know what to tell you!</p>
             </div>
             <div id="form-container">
                 <h2>Give no one your info!</h2>
-                <div id="form-row">
+                <form action="" method="post">
                     <div class="form-col">
-                        <label for="first-name">First Name</label>
-                        <input type="text" id="first-name" name="first-name"/>
-                        <label for="first-name">First Name</label>
-                        <input type="text" id="first-name" name="first-name"/>
-                        <label for="first-name">First Name</label>
-                        <input type="text" id="first-name" name="first-name"/>
+                        <div class="input-div">
+                            <label for="first-name">FIRST NAME</label>
+                            <input type="text" id="first-name" name="first-name"/>
+                        </div>
+                        <div class="input-div">
+                            <label for="email">EMAIL</label>
+                            <input type="email" id="email" name="email"/>
+                        </div>
+                        <div class="input-div">
+                            <label for="password">PASSWORD</label>
+                            <input type="password" id="password" name="password" class="pass-nomatch"/>
+                        </div>
                     </div>
                     <div class="form-col">
-                        <label for="first-name">First Name</label>
-                        <input type="text" id="first-name" name="first-name"/>
-                        <label for="first-name">First Name</label>
-                        <input type="text" id="first-name" name="first-name"/>
-                        <label for="first-name">First Name</label>
-                        <input type="text" id="first-name" name="first-name"/>
+                        <div class="input-div">
+                            <label for="last-name">LAST NAME</label>
+                            <input type="text" id="last-name" name="last-name"/>
+                        </div>
+                        <div class="input-div">
+                            <label for="phone">PHONE NUMBER</label>
+                            <input type="tel" id="phone" name="phone"/>
+                        </div>
+                        <div class="input-div">
+                            <label for="password-confirm">CONFIRM PASSWORD</label>
+                            <input type="password" id="password-confirm" name="password-confirm" class="pass-nomatch"/>
+                        </div>
                     </div>
-                </div>
+                <form>
             </div>
             <div>
                 <button>Create Account</button>
